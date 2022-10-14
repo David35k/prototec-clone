@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Poopootec</title>
+    <script src="app.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <form action="https://formsubmit.co/davtoman@student.pakuranga.school.nz" method="POST">
+
+        <input type="hidden" name="_subject" value="Someone used Poopootec">
+
+        <h1>Poopootec</h1>
+        <h6>(It's better than prototec)</h6>
+        <h2>Make a custom quiz:</h2>
+
+
+        <div>
+            <label for="numOfQuestions">Number of questions:</label>
+            <input id="numOfQuestions" type="number" name="questions" min="1" max="100" step="1">
+
+            <label for="operation">Operation:</label>
+            <select id="operation" name="operation">
+                <option value="+">Addition</option>
+                <option value="-">Subtraction</option>
+                <option value="*">Multiplication</option>
+                <option value="/">Division</option>
+                <option value="mixed">Mixed</option>
+            </select>
+
+            <input type="hidden" name="score" id="score">
+            <input type="hidden" name="time" id="time">
+
+        </div>
+
+        <button type="button" id="generateButton" class="button button-font">Generate</button>
+
+        <div id="questions">
+
+        </div>
+
+        <br>
+
+        <h2 id="timeText">Time:<span id="seconds">00</span>:<span id="tens">00</span></h2>
+
+        <h2 id="scoreText"></h2>
+
+        <br>
+
+        <div id="commentSection">
+            <label for="feedback">Feedback:</label>
+            <textarea class="form-control" rows="5" id="feedback" name="feedback"></textarea>
+        </div>
+
+        <br>
+
+        <button type="button" id="checkButton" class="button button-font">Mark</button>
+
+        <button type="button" id="submitButton" class="button button-font">Submit</button>
+
+    </form>
+
+</body>
+
+</html>

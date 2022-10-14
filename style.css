@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffdd;
+    font-family: Comic Sans MS, sans-serif;
+}
+
+#questions {
+    display: none;
+}
+
+#questions.appear {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 50px;
+    margin: 10px;
+    border: solid #000;
+    border-width: 1px;
+    border-radius: 7.5px;
+}
+
+.button {
+    margin: 20px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+.button-font {
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+textarea {
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*This code makes elements appear if they have the appear class as well,
+ this is added through javascript*/
+.message-correct {
+    display: none;
+    color: green;
+}
+
+.message-wrong {
+    display: none;
+    color: red;
+}
+
+#submitButton {
+    display: none;
+}
+
+#checkButton {
+    display: none;
+}
+
+#commentSection {
+    display: none;
+}
+
+#scoreText {
+    display: none;
+}
+
+#timeText {
+    display: none;
+    flex-direction: row !important;
+}
+
+.appear {
+    display: flex !important;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button.appear {
+    display: inline-flex !important;
+}
